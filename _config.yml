@@ -5,7 +5,7 @@ description: 欢迎来到我的个人站~
 # 头像里面的标题
 avatarTitle: mylord
 # 头像里面的描述
-avatarDesc: C++/PCL/立体视觉
+avatarDesc: 视觉感知
 url: "http://my-lord.cn"
 
 # Comment
@@ -61,7 +61,7 @@ blog_button:
 # Navigation buttons in the front page.s
 nav:
     - {title: 文章, description: archive, url: '/archive'}   
-    - {title: 标签, description: tags, url: '/tags'}      
+    - {title: 项目, description: tags, url: '/tags'}      
     - {title: 关于, description: about, url: '/about'}      
     
 
@@ -71,6 +71,7 @@ gems: [jekyll-paginate]
 paginate: 20
 paginate_path: "page/:num/"
 
-
+kramdown:
+  hard_wrap: true # 将每个换行符都转换为 <br>，无需两个空格
 
 theme: jekyll-theme-cayman
