@@ -1,11 +1,11 @@
 # Basic
 title: 邓辉
-subtitle: 个人站
-description: 欢迎来到我的个人站~
+subtitle: 不要惊慌
+description: 记录个人生活感悟和学习心得的一个小空间，定期的复盘和反思。回头看我人生中的各个点所连成的线。
 # 头像里面的标题
 avatarTitle: mylord
 # 头像里面的描述
-avatarDesc: 视觉感知
+avatarDesc: 专注于视觉感知技术学习
 url: "http://my-lord.cn"
 
 # Comment
@@ -57,12 +57,11 @@ cover_color:
 # The blog button should not be removed.
 blog_button:
     title: 主页
-    url: '/index'
 
 # Navigation buttons in the front page.s
 nav:
     - {title: 文章, description: archive, url: '/archive'}   
-    - {title: 项目, description: tags, url: '/tags'}      
+    - {title: 主页, description: index, url: '/index'}      
     - {title: 关于, description: about, url: '/about'}      
     
 
