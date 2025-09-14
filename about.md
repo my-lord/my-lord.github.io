@@ -20,7 +20,7 @@ title: 关于我
  2015年深度学习兴起带动了对大数据的需求，叠加当年环境污染等热点问题，导师定了一个方向就是把网上全国各个地方的实时空气质量PM25数据收集下来，这样后面可以用这个数据训练一个异常预警的模型系统。内部逻辑就是空气质量的变好与变坏肯定是跟异常的人为活动有关。
 **技术思路**
 
-<img src="/Users/mylord/Documents/my-lord.github.io/images/readme/hotmap1.png" alt="hotmap" style="zoom: 25%;" />
+<img src="./images/readme/hotmap1.png" alt="hotmap" style="zoom: 25%;" />
 
 基于Java语言从调用空气质量发布网提供的API周期性的获取JSON格式的全国各个城市的空气质量数据，包括：城市名称、经纬度坐标、时间和PM25数值。然后把采集到的数据自动上传到PostgreSQL数据库，调用百度地图API以热力图的形式展示各个城市的空气质量变化和污染程度。
 
@@ -36,7 +36,7 @@ title: 关于我
 
 **技术思路**
 
-<img src="/Users/mylord/Documents/my-lord.github.io/images/readme/suidao.png" alt="suidao" style="zoom:50%;" />
+<img src="./images/readme/suidao.png" alt="suidao" style="zoom:50%;" />
 
 用美国Trimble的三维激光扫描仪分两个时间点扫描同一个隧道，基于两期点云数据对隧道做形变分析，输出隧道变形监测报告。主要困难点在于隧道内部的灯带管线等非隧道本体的噪声点云滤除。设计了一个基于隧道中轴线与法向夹角垂直关系的两步滤除方法，先利用点云法向作为结构表面一阶倒数能够敏锐的反应噪声点与非噪声点的法向差异。第一步利用中轴线与隧道表面法向垂直作为约束条件以一个极其严苛的阈值滤除噪声点，这一步的优势是能够极大程度的保持留下的都是隧道表面点云，问题是滤掉噪声的同时会损失大量的非噪声点。第二步，以第一步留下的隧道点云作为隧道模板，计算第一步滤除的点云到隧道模板表面的距离来回收非噪声点。
 
@@ -52,7 +52,7 @@ title: 关于我
 
 **技术思路**
 
-​          <img src="/Users/mylord/Documents/my-lord.github.io/images/readme/sfm.png" alt="sfm" style="zoom: 30%;" />         <img src="/Users/mylord/Library/Application Support/typora-user-images/image-20250911222805110.png" alt="image-20250911222805110" style="zoom: 54%;" />  
+​          <img src="./images/readme/sfm.png" alt="sfm" style="zoom: 30%;" />         <img src="./images/readme/sfm1.png" alt="image-20250911222805110" style="zoom: 54%;" />  
 
 利用运用运动恢复结构算法（SFM）从序列图像中重建三维点云点云，并选择直线特征作为作为配准三维激光扫描点云和基于图像的运动恢复重建点云联系特征，对两组点云做配准融合。运动恢复重建点云中基于图像中提取的同名线段匹配恢复密集线段点云特征，三维激光扫描点云中基于法向变化剧烈程度提取位于直线边缘处的扫描点。利用线段点云的匹配关系获取两组点云变换的初始位姿，然后对两组点云做变尺度ICP实现异构点云数据融合。
 
@@ -68,7 +68,7 @@ title: 关于我
 
 **技术思路**
 
-<img src="/Users/mylord/Library/Application Support/typora-user-images/image-20250913164332923.png" alt="image-20250913164332923" style="zoom:20%;" />
+<img src="./images/readme/normal.png" alt="image-20250913164332923" style="zoom:20%;" />
 
 主体思路就是利用点云法向信息对边缘信息的敏感性，对每个点邻域内法向做聚类分析，一个聚类表示该区域为光滑平面、两个聚类表示该区域为两个面交接的边缘、三个及以上聚类则表示该区域为三个以上面组合成的角点。对邻域内包含两个及以上聚类的邻域点做聚类分割到其所属的平面，从新拟合各个子类光滑面的表面方程。最后从一个表面上的点向与其相交的其他表面做映射，重建出位于交界边缘点。
 
@@ -84,7 +84,7 @@ title: 关于我
 
 **工作内容**
 
-<img src="/Users/mylord/Documents/my-lord.github.io/images/readme/ppfs.png" alt="ppfs" style="zoom:30%;" />
+<img src="./images/readme/ppfs.png" alt="ppfs" style="zoom:30%;" />
 
 视觉引导机械臂三维无序抓取和基于结构光的3D成像是当时国内比较火的一个创业赛道，汉振当时的两个主要方向就是3D成像和视觉引导无序抓取。我当时主要负责后端的视觉引导抓取，主要包括：基于3D视觉成像获取的点云数据识别料框内物料的3D位姿，通过相机和机械臂的手眼标定把相机坐标系下的识别结果转换到机器人坐标系。最后控制器机械臂从料框内抓取物料实现机台的自动化上料。整个流程包含的模块有：3D位姿估计、碰撞检测、机械臂运动学解算和轨迹规划。3D位姿估计采用的是模型匹配的方法，主要思路是点云特征点对的粗配准[<sup>4</sup>](#R4)和ICP精配准[<sup>5</sup>](#R5)。
 
@@ -100,7 +100,7 @@ title: 关于我
 
 **工作内容**
 
-<img src="/Users/mylord/Documents/my-lord.github.io/images/readme/IMG_2414.jpg" alt="IMG_2414" style="zoom:30%;" /><img src="/Users/mylord/Documents/my-lord.github.io/images/readme/IMG_2415.PNG" alt="IMG_2415" style="zoom:80%;" />
+<img src="./images/readme/IMG_2414.jpg" alt="IMG_2414" style="zoom:30%;" /><img src="./images/readme/IMG_2415.PNG" alt="IMG_2415" style="zoom:80%;" />
 
 
 
