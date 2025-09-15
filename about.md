@@ -12,7 +12,11 @@ title: 关于我
 
 **河海大学**																																																		2015-09-01 ~ 2018-06-01
 
-------
+---
+
+```
+<hr style="height: 4px; border: none; background-color: #333; margin: 2rem 0;">
+```
 
 ## 空气质量收集系统搭建
 
