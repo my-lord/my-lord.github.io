@@ -12,11 +12,9 @@ title: 关于我
 
 **河海大学**																																																		2015-09-01 ~ 2018-06-01
 
----
-
-```
 <hr style="height: 4px; border: none; background-color: #333; margin: 2rem 0;">
-```
+
+
 
 ## 空气质量收集系统搭建
 
@@ -84,7 +82,9 @@ title: 关于我
 
 **浙江汉振智能技术有限公司**																											     												         		2018-07  ~ 2019-07
 
-------
+<hr style="height: 4px; border: none; background-color: #333; margin: 2rem 0;">
+
+
 
 ## 视觉引导机械臂三维无序抓取
 
@@ -100,7 +100,7 @@ title: 关于我
 
 **广东博智林机器人有限公司**																											     												         		2019-08  ~ 2021-03
 
-------
+<hr style="height: 4px; border: none; background-color: #333; margin: 2rem 0;">
 
 ## 测量服务软件平台
 
@@ -114,7 +114,9 @@ title: 关于我
 
 读书期间一直在想建筑场景应该是视觉检测的一个重要的应用市场，刚巧博智林做建筑机器人把视觉检测需求带到了建筑场景（之前视觉检测的主要场景还是工业场景，毕竟建筑行业的自动化水平相对较低）。新的应用场景的优势是需求充足，劣势就是有没太多的经验借鉴，主要还是用工业领域的经验。而且，作为一个新测量方式想要让传统基于人工靠尺墙面平整度测量标准认可，就需要输出模拟人工测量方式并保证结果与人工测量的一致性。行业整体的水平是60%的一致性，我们能做到85%。
 
+**上海仙工智能科技股份有限公司**																											     												    2021-03  ~ 
 
+<hr style="height: 4px; border: none; background-color: #333; margin: 2rem 0;">
 
 ## 3D视觉库位检测
 
@@ -128,27 +130,27 @@ title: 关于我
 
 3D库位检测也是新接触的一个视觉应用场景，困难点在于需要准确的感知视野内库区有没有货物、货物类型、和是不是被遮挡（核心点就是要知道是视野被挡住了，而不是库区内是空的）。做这个项目最主要的成长在于框架的搭建，按模块来分就是：相机适配、标定、算法处理和检测结果对外发布，涉及的技术包括：多线程管理、时间同步、网络通信、算法库的搭建、API文档。相比之前只是单独的负责算法功能开发，这次则相当于完整的项目前勘、开发、实施和维护。
 
-## 复合机器人项目
-
-**工作内容**
-
-
-
-**复盘**
-
-
-
-
-
 ## 移动机器人控制器
 
-**工作内容**
+### 复合机器人
+
+<img src="/images/readme/fuhe.png" alt="fuhe" style="zoom: 20%;" />
+
+### 基于消费级相机高精度位姿估计算法
+
+![liaohe](/images/readme/liaohe.png)
+
+### 自适应栈板识别
+
+![auto_pallet](/images/readme/auto_pallet.png)
+
+### 料箱识别
+
+![inst_pose](/images/readme/inst_pose.jpg)
 
 
 
-
-
-**复盘**
+<hr style="height: 4px; border: none; background-color: #333; margin: 2rem 0;">
 
 
 
@@ -188,7 +190,7 @@ title: 关于我
 
 
 
-
+<hr style="height: 4px; border: none; background-color: #333; margin: 2rem 0;">
 
 # 个人评价
 
@@ -205,9 +207,7 @@ title: 关于我
 </p>
 
 
-
-
----
+<hr style="height: 4px; border: none; background-color: #333; margin: 2rem 0;">
 
 更新：
 
