@@ -721,7 +721,7 @@ img::-moz-selection {
     font-size: 1.8em;
     font-weight: bold;
     text-shadow: none;
-    color: #000;
+    color: #fff;
   }
   .navigation__item {
     display: inline-block;
@@ -733,8 +733,8 @@ img::-moz-selection {
     display: inline-block;
     position: relative;
     width: 100%;
-    border-color: #000;
-    color: #000;
+    border-color: #fff;
+    color: #fff;
     font-weight: bold;
   }
 
@@ -1376,7 +1376,7 @@ nav a {
 
 .nav-menu-item a {
   padding: 0px;
-  color: #000;
+  color: #fff;
   font-weight: 700;
   font-size: 2.4em;
   text-shadow: none;
