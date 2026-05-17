@@ -12,7 +12,7 @@ tag: 上海仙工 移动机器人 项目经历
 
 ## 复合机器人
 
-<img src="/images/readme/fuhe.png" alt="fuhe" style="zoom:20%;" />
+详见：[3D 视觉复合机器人抓取](/2022/10/3d-composite-robot-grasping/)
 
 ## 基于消费级相机的高精度位姿估计算法
 
@@ -20,7 +20,7 @@ tag: 上海仙工 移动机器人 项目经历
 
 ## 自适应栈板识别
 
-![auto_pallet](/images/readme/auto_pallet.png)
+详见：[深度学习自适应栈板追踪](/2021/12/deep-learning-pallet-tracking/)
 
 ## 料箱识别
 
