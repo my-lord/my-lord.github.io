@@ -3,7 +3,7 @@ layout: post
 title: "基于立体视觉的三维场景建模"
 date: 2015-11-01
 description: "SfM 重建点云与激光扫描点云的异构融合，用直线特征做配准"
-tag: 计算机视觉 点云算法
+tag: 3D视觉
 ---
 
 ## 背景
